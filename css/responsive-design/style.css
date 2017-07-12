@@ -33,6 +33,11 @@
 
   body {
     max-width: 960px;
+    text-align: center;
+    /*
+    text is centered but the external links section and the main section
+    will still be side by side.
+     */
   }
 
   #external-links {
