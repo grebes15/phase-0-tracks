@@ -1,52 +1,85 @@
-blockquote {
-  border-left: 5px solid blue;
-  padding: 15px;
-  margin-left: 0px;
-}
+  blockquote {
+    border-left: 5px solid blue;
+    padding: 15px;
+    margin-left: 0px;
+  }
 
-cite {
-  display: block;
-  margin-top: 10px;
-}
+  cite {
+    display: block;
+    margin-top: 10px;
+  }
 
-#external-links ul {
-  list-style-type: none;
-  padding-left: 0px;
-}
+  #external-links ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
 
-/* you're welcome to edit the
-image, figure, and figcaption CSS if you'd like, 
-but it's optional! */
-img {
-  width: 100%;
-}
+  /* you're welcome to edit the
+  image, figure, and figcaption CSS if you'd like, 
+  but it's optional! */
+  img {
+    width: 100%;
+  }
 
-figure {
-  margin-left: 0px;
-  margin-right: 0px;
-}
+  figure {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
-figcaption {
-  font-style: italic;
-  text-align: right;
-}
+  figcaption {
+    font-style: italic;
+    text-align: right;
+  }
 
-body {
-  max-width: 960px;
-}
+  body {
+    max-width: 960px;
+  }
 
-#external-links {
-  width: 20%;
-  display: inline-block;
-  height: 100%;
-  float: left;
-  /*vertical-align: inherit; */
-}
+  #external-links {
+    width: 20%;
+    display: inline-block;
+    height: 100%;
+    float: left;
+    /*vertical-align: inherit; */
+  }
 
-main {
-  width: 80%;
-  vertical-align: bottom;
-  display: inline-block;
-  min-width: 10%;
+  main {
+    width: 80%;
+    vertical-align: bottom;
+    display: inline-block;
+    min-width: 10%;
 
-}
+  }
+  /*Keep this syntax as a reference*/
+  /*@media screen and (max-width: 500px) {
+    body {
+      background-color: hotpink;
+    }
+    }*/
+
+    @media screen and (max-width: 500px) {
+      body{
+        font-size: .8em;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      li {
+        font-size: .6em;
+      }
+    }
+    /*@media screen and (max-width: 250px) {
+      #external-links {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        border-bottom:2px solid #000;
+      }
+    }*/
+    @media screen and (max-width: 500px){
+       #external-links{     
+        float: none;     
+        display: block;   
+        } 
+      }
