@@ -1,0 +1,28 @@
+.CSS-Positioning {
+	position: relative;
+}
+
+#octopus {
+	position: relative;
+	top: 68px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 68px;
+}
+
+#hat {
+	top: -291px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+#glasses {
+	position: relative;
+	top: -287px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
