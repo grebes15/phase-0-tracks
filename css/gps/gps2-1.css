@@ -1,3 +1,36 @@
-body {
-	background-color: blue;
+.column-1{
+  width: 48%;
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.column-2{
+  width: 48%;
+  display: inline-block;
+}
+
+header{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  border: 1px solid;
+  margin-top: 5px;
+  font-family: courier;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+a{
+  color: lightblue;
+}
+
+img{
+  width: 30%;
+  float: left;
 }
