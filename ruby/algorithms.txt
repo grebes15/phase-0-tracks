@@ -1,0 +1,41 @@
+4.2 Algorithms
+Andreas Landgrebe
+
+Release 0: Equip Your New Robot
+Elevator Algorithm
+-Initialize an elevator object
+
+-Register a request for any given floor
+
+-If on ground floor, the only position to go is up
+
+-If not on ground floor, then requests can either go up or down
+
+-Once elevator is on the requested floor, press the floor that is going to be visited
+
+-Travel to all of the floors being requested
+
+-Travel to the given floor to drop off passengers or pick up passengers
+
+-Start another elevator route according to the current requests being asked
+
+-Travel to the request floor until all requests have been fulfilled. 
+
+Release 1: Find a Real-Life Algorithm
+
+One common task in my life that could be translated into an algorithm would be makeing scrambled eggs in the morning. Here are the steps:
+Making Scrambled Eggs
+-Open your eyes and wake up in the morning
+-Do downstairs and check in the fridge if they are eggs
+	-If there are no eggs
+		-Go to a neighbor to see if they have eggs
+		-If neighbor's do not have eggs or do not answer, go to the grocery store to gets eggs
+	-If there are eggs
+		-Crack as many eggs as you deem fit.
+		-Crack the eggs into a bowl
+		-Pour a little bit of milk
+		-Use a fork to swirl the eggs until it start to change color
+		-Once it had changed color, pour the eggs into a pan with a hot counter top.
+		-Swirl it around in the pan until it starts to solidify.
+		-Once it starts to solidify, took it off the pan before the eggs start to turn brown.
+		-Enjoy eating your eggs!
