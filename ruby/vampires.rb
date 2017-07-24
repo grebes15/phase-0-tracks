@@ -38,7 +38,7 @@ if employee_allergies == "sunshine"
 	is_vampire = "Probably a vampire"
 else
 
-	if(year_response_to_age == age_response) && (garlic_response == "Yes" || insurance_response == "Yes")
+	if(year_response_to_age >= age_response && year_response_to_age <= age_response + 1) && (garlic_response == "Yes" || insurance_response == "Yes")
 		is_vampire = "Probably not a vampire"
 	end
 	if(year_response_to_age != age_response) && (garlic_response == "No" || insurance_response == "No")
