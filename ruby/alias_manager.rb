@@ -63,34 +63,42 @@ alphabet_encrypted = {
 #end
 
 
-
+$encrpyted_string = ""
 empty_hash = {} #empty hash to try to store the spy's actual name and fake name.
 loop do
+
 puts
 puts "Please provide a spy's real name or type 'quit' when completed"
 real_name = gets.chomp
 
 break if real_name == "quit"
 
-#split the inputted string into two indexes in an arraywith the space to know first name and last name
+#split the inputted string into two indexes in an array with the space to know first name and last name
 element = real_name.split(" ") 
  
 first_name = element[0]
+#the first name will be put in the first index of the element variable
 last_name = element[1]
+#the last name will be put in the other index.
 full_name = first_name + last_name
 empty_hash[real_name.to_sym] = real_name.each_char{ |c| full_name = alphabet_encrypted[c.to_sym]}
 
 puts "The encrypted name is"
 last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]}
+print " "
 first_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
 
 puts 
 puts
 #displays the encrypted name and then displays the actually name
-last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
-first_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
-p " is actually #{real_name}"
+last_name.each_char{ |c|  $encrpyted_string << alphabet_encrypted[c.to_sym]} 
+print " "
+first_name.each_char{ |c| $encrpyted_string << alphabet_encrypted[c.to_sym]} 
+p $encrpyted_string + " is actually #{real_name}"
+#I was attempting to use the empty_hash hash to store the spy_name and the actual_name outside of the loop but I was unable to get it working properly. 
 end
+
+#p $encrpyted_string + " is actually "
 
 #empty_hash.each {|actual_name, spy_name| puts "#{spy_name} is actually #{actual_name}"}
 
