@@ -1,7 +1,7 @@
 #5.5 Solo Challenge: Manipulating Strings with Iteration
 
 
-
+#create a hash to store any possible combinations to create a fake name after inputting the spy's real name
 alphabet_encrypted = {
 	a: 'e',
 	b: 'c',
@@ -57,30 +57,52 @@ alphabet_encrypted = {
 	Z: 'B'
 }
 
-begin
+#def encrypted_name
+#last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
+#first_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
+#end
 
+
+
+empty_hash = {} #empty hash to try to store the spy's actual name and fake name.
+loop do
 puts
-puts "Please provide a spy's real name"
+puts "Please provide a spy's real name or type 'quit' when completed"
 real_name = gets.chomp
 
+break if real_name == "quit"
 
+#split the inputted string into two indexes in an arraywith the space to know first name and last name
 element = real_name.split(" ") 
+ 
 first_name = element[0]
 last_name = element[1]
-#puts last_name
-#puts first_name
-puts "The encrypted name is"
+full_name = first_name + last_name
+empty_hash[real_name.to_sym] = real_name.each_char{ |c| full_name = alphabet_encrypted[c.to_sym]}
 
-last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
+puts "The encrypted name is"
+last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]}
 first_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
 
 puts 
+puts
+#displays the encrypted name and then displays the actually name
+last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
+first_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} 
+p " is actually #{real_name}"
+end
+
+#empty_hash.each {|actual_name, spy_name| puts "#{spy_name} is actually #{actual_name}"}
 
 
-last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} + first_name.each_char{ |c| print alphabet_encrypted[c.to_sym]}
-p " is acutally #{real_name}"
+#each_char merhod to iterate through all characters in the inputted string
 
-end until (real_name == "quit")
+
+
+#last_name.each_char{ |c| print alphabet_encrypted[c.to_sym]} + first_name.each_char{ |c| print alphabet_encrypted[c.to_sym]}
+#p " is acutally #{real_name}"
+
+
 
 #real_name_stored = real_name
 #puts real_name_stored + "is actually " + last_name_stored + first_name_stored
