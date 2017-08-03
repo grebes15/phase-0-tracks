@@ -12,9 +12,14 @@ class Santa
 	def eat_milk_and_cookies(type_of_cookie)
 		puts "That was a good #{type_of_cookie}!"
 	end
-class_santa = Santa.new("agender", "black")
-class_santa.speak
-class_santa.eat_milk_and_cookies("Chocolate-chip")
+
+	def celebrate_birthday
+		@age += 1
+	end
+
+	def get_mad_at(name_of_reindeer)
+	end
+
 
 
 end
@@ -25,3 +30,7 @@ example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer n
 example_genders.length.times do |i|
   santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
+
+class_santa = Santa.new("agender", "black")
+class_santa.speak
+class_santa.eat_milk_and_cookies("Chocolate-chip")
