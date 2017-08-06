@@ -1,0 +1,6 @@
+store a word that one is guessing for
+have someone guess a word
+compare the two words side by side
+check every letter in the guessed word and compare it to the correct word
+if one of the letters match, then print out that letter
+if the letters do not match, then print out -
