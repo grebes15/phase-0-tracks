@@ -25,8 +25,9 @@ describe Wordgame do
 		expect(wordgame.check_success).to eq "You have exceeded the number of tries."
 	end
 
-	it "checks the count" do
-		
+	it "checks the content in attempted words array" do
+		wordgame.check_word("andreat")
+		expect(wordgame.attempted_words[0]).to eq "andreat"
 	end
 
 

@@ -1,5 +1,5 @@
 class Wordgame
-	attr_reader :guess_word, :guess_array, :secret_word, :count
+	attr_reader :guess_word, :guess_array, :secret_word, :count, :attempted_words
 
 	def initialize(secret_word)
 		@secret_word = secret_word.downcase
