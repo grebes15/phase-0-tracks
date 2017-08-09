@@ -7,6 +7,8 @@
 #
 #
 require_relative 'state_data'
+#require_relative is relative to this file and gain access to that file.
+#require would be used only if you are using an outside library
 
 class VirusPredictor
 
