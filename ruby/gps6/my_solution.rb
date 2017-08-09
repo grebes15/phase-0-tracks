@@ -26,7 +26,7 @@ class VirusPredictor
   end
 
   private
-
+  #predicts the number of deaths based on population_density.
   def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -44,7 +44,7 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
+  #calculators the speed of the virus based on population density.
   def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
