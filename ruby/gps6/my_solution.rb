@@ -11,21 +11,23 @@ require_relative 'state_data'
 #require would be used only if you are using an outside library
 
 class VirusPredictor
-
+	#initializing 3 attributes/ instance variables to be used throughout various methods written for this class
+	#creating a new instance of this class
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+  #calls predicted_deaths methods and speed_of_spread method to provide information regarding the effects of the virus.
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
   private
 
-  def predicted_deaths(population_density, population, state)
+  def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -43,7 +45,7 @@ class VirusPredictor
 
   end
 
-  def speed_of_spread(population_density, state) #in months
+  def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
     speed = 0.0
