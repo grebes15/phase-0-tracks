@@ -110,3 +110,16 @@ end
 
 #=======================================================================
 # Reflection Section
+# - There are no differences between the two different hash syntaxes shown in the state_data file.
+# Each hash syntax performs the same task.
+# - require_relative is accessing a file relative to the directory that one is currently in.
+# This is difference from require. Require is used to specify to use an outside library in the Ruby program.
+# - Some way to iterate through an hash is to use an each method. 
+# The source code shown between lines 105-108 is an example of how to iterate through an hash
+# using an each method. One could also use a map method to iterate through a hash.
+# - When refactoring virus_effects, I noticed that the parameters and arguments being passed
+# were not being changed. It was the attributes or instance variables being passed in the initialize method
+# that were being changed so having these parameters being called did not change the program so it doesn't make
+# sense to have continue to have these parameters being passed when they are not being used.
+# The concept that I most sodlified in this challenge is understanding what is being asked when one
+# ask about the scope of a variable, method, or object.
