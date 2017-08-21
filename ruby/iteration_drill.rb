@@ -37,13 +37,13 @@ puts supplies_contains(zombie_apocalypse_supplies, "tennis racquet")
 # leaving only 5, using #each.
 # ----
 
-#zombie_apocalypse_supplies.each do |x|
-#	until zombie_apocalypse_supplies.length == 5
-#		puts zombie_apocalypse_supplies
-#		zombie_apocalypse_supplies.pop
-#	end
-#	puts x
-#end
+zombie_apocalypse_supplies.each do |x|
+	until zombie_apocalypse_supplies.length == 5
+		puts zombie_apocalypse_supplies
+		zombie_apocalypse_supplies.pop
+	end
+	puts x
+end
 
 puts "Question 4"
 
