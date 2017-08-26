@@ -1,0 +1,61 @@
+Andreas Bach Landgrebe
+8.3 Solo Challenge Build a Database
+
+Realse 2: Execute SQL Queries
+
+1. Display the information in one table (either table is fine).
+SELECT * FROM books;
+1|Programming Interviews Exposed|2013
+2|Software Engineering|2010
+3|Computer Architecture|2003
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+UPDATE authors SET name="Shari Pfleeger" WHERE id=4;
+SELECT * FROM authors;
+1|John Mongan|1
+2|Eric Giguere|1
+3|Noah Kindler|1
+4|Shari Pfleeger|2
+5|Joanne M. Atlee|2
+6|John L. Hennessy|3
+7|David A. Patterson|3
+
+
+3. Display the information in both tables using one query.
+SELECT * FROM authors, books WHERE authors.book_ID = books.id;
+
+1|John Mongan|1|1|Programming Interviews Exposed|2013
+2|Eric Giguere|1|1|Programming Interviews Exposed|2013
+3|Noah Kindler|1|1|Programming Interviews Exposed|2013
+4|Shari Pfleeger|2|2|Software Engineering|2010
+5|Joanne M. Atlee|2|2|Software Engineering|2010
+6|John L. Hennessy|3|3|Computer Architecture|2003
+7|David A. Patterson|3|3|Computer Architecture|2003
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+SELECT books.name, authors.name FROM authors JOIN books ON authors.book_ID = books.id;
+
+Programming Interviews Exposed|John Mongan
+Programming Interviews Exposed|Eric Giguere
+Programming Interviews Exposed|Noah Kindler
+Software Engineering|Shari Pfleeger
+Software Engineering|Joanne M. Atlee
+Computer Architecture|John L. Hennessy
+Computer Architecture|David A. Patterson
+
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+DELETE FROM authors WHERE name="Noah Kindler";
+SELECT * FROM authors;
+
+1|John Mongan|1
+2|Eric Giguere|1
+4|Shari Pfleeger|2
+5|Joanne M. Atlee|2
+6|John L. Hennessy|3
+7|David A. Patterson|3
+
+
+Release 3: Research on Your Own
+Join Commands:
+
